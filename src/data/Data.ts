@@ -73,7 +73,7 @@ export const projects = [
     title:"Software Engineer",
     domains:"E-learning platform",
     company:{name:"TechLead International (Pvt) Ltd", link:"https://techleadintl.com/"},
-    duration:"January 2021 – September 2022",
+    duration:"January 2021 – September 2021",
     techStack:[]
   },
   {
