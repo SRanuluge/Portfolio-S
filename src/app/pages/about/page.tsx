@@ -3,10 +3,8 @@ import Image from "next/image";
 import img from "../../../../public/profile.jpg";
 import { aboutMe } from "@/data/Constants";
 import { AiOutlineDownload } from "react-icons/ai";
-import CustomButton from "@/components/button/CustomButton";
 import { backEnd, education, experience, frontEnd } from "@/data/Data";
 import Link from "next/link";
-import CustomLink from "@/components/button/CustomLink";
 
 export default function About() {
   return (
@@ -57,8 +55,12 @@ export default function About() {
         <div className="flex-col flex-1 border px-4 shadow-sm py-4">
           <h4 className="py-4 text-center font-semibold">Back-End</h4>
           <ul className="grid grid-cols-3 list-[square] list-inside">
-            {backEnd.map((item) => {
-              return <li className="py-2 font-medium">{item}</li>;
+            {backEnd.map((item, i) => {
+              return (
+                <li key={i} className="py-2 font-medium">
+                  {item}
+                </li>
+              );
             })}
           </ul>
         </div>
@@ -75,9 +77,9 @@ export default function About() {
         Experience
       </h3>
       <div className="py-6 grid grid-cols-2 flex-1 border px-4 shadow-sm ">
-        {experience.map((exp) => {
+        {experience.map((exp, i) => {
           return (
-            <div className="flex-col justify-center text-center py-6 ">
+            <div key={i} className="flex-col justify-center text-center py-6 ">
               <p className="py-2 font-medium ">{exp.title}</p>
               {exp.domains && (
                 <p className="pt-2 text-lg">{`Domain(s): ${exp.domains}`}</p>
