@@ -38,7 +38,7 @@ export const projects = [
   ];
   
   export const navList = [
-    { id: "1", name: "Home", link: "" },
+    { id: "1", name: "Home", link: "/" },
     { id: "2", name: "About", link: "/pages/about" },
     { id: "3", name: "Projects", link: "/pages/projects" },
     { id: "4", name: "Contact", link: "/pages/contact" },

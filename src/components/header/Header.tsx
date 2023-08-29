@@ -52,7 +52,7 @@ const Header = () => {
       } w-full top-0 fixed z-10  transition-all duration-700 ease-in shadow-sm `}
     >
       <div className="flex py-3 px-2 justify-between max-w-[1366px] m-auto ">
-        <Link href={""}>
+        <Link href={"/"}>
           <h1 className="text-md font-semibold ">Sanjeewa</h1>
         </Link>
         <ul className="flex items-center sm:gap-6">
