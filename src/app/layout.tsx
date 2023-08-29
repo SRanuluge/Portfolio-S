@@ -4,7 +4,6 @@ import { Raleway, Work_Sans, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/header/Header";
-import { useRouter } from "next/router";
 
 const ThemeProvider = dynamic(() => import("@/contexts/ThemeContext"), {
   ssr: false,
