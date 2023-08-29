@@ -45,8 +45,12 @@ export default function About() {
         <div className="flex-col justify-center flex-1 border px-4 py-4 shadow-sm ">
           <h4 className="py-4 text-center font-semibold">Front-End</h4>
           <ul className="grid grid-cols-3 list-[square] list-inside ">
-            {frontEnd.map((item) => {
-              return <li className="py-2 font-medium">{item}</li>;
+            {frontEnd.map((item, i) => {
+              return (
+                <li key={i} className="py-2 font-medium">
+                  {item}
+                </li>
+              );
             })}
           </ul>
         </div>

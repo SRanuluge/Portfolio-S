@@ -33,8 +33,8 @@ export const Card: FC<CardProps> = ({
             <h2 className="text-base pb-2 font-semibold">{title}</h2>
             <h3 className=" text-base py-2">{details}</h3>
             <div className="flex font-semibold text-base justify-center py-2 ">
-              {techStack.map((tech) => (
-                <span>{tech}</span>
+              {techStack.map((tech, i) => (
+                <span key={i}>{tech}</span>
               ))}
             </div>
           </div>
