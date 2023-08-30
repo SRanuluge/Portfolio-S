@@ -2,11 +2,7 @@
 const nextConfig = {
   output: "export",
   basePath: "/portfolio",
-  assetPrefix: "/portfolio",
-  images: {
-    loader: "custom",
-    loaderFile: "./my-loader.ts",
-  },
+  // assetPrefix: "/portfolio",
 };
 
 module.exports = nextConfig;
