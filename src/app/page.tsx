@@ -14,6 +14,7 @@ export default function Home() {
           style={{ width: "100%", objectFit: "contain" }}
           height={500}
           alt="logo"
+          placeholder="blur"
         />
       </div>
       <div className="flex-1 sm:mt-5 ">

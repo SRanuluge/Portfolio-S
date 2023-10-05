@@ -12,6 +12,7 @@ const Projects = () => {
               alt="image"
               className="object-fill w-full max-h-[350px] h-[350px]"
               src={img}
+              placeholder="blur"
               title={title}
               details={description}
               techStack={techStack}

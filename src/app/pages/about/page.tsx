@@ -17,6 +17,7 @@ export default function About() {
             height={250}
             src={img}
             alt="me"
+            placeholder="blur"
             className="rounded-md object-contain"
           />
         </div>
