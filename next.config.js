@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "export",
-  basePath: "/portfolio",
-  // assetPrefix: "/portfolio",
-  trailingSlash: true,
+  images: {
+    domains: ["cdn.imagin.studio"],
+  },
 };
 
 module.exports = nextConfig;
