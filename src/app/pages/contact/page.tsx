@@ -1,5 +1,9 @@
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <div className="w-full h-screen flex justify-center items-center">
+      In Progress
+    </div>
+  );
 };
 
 export default Contacts;

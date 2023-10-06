@@ -10,6 +10,7 @@ interface CustomLinkProps {
 function CustomLink({ label, link, icon }: CustomLinkProps) {
   return (
     <Link
+      target="_blank"
       href={link}
       className="flex font-medium items-center justify-evenly gap-2"
     >

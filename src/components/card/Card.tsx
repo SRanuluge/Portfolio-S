@@ -24,8 +24,10 @@ export const Card: FC<CardProps> = ({
 }) => {
   return (
     <div className="items-center md:flex md:min-h-full gap-20 py-10">
-      <div className="relative flex-1">
-        <Image {...rest} />
+      <div className="relative flex-1 w-full h-80 justify-center items-center">
+        <div className="flex w-full h-full ">
+          <Image {...rest} />
+        </div>
       </div>
       <div className="flex-1 sm:mt-5">
         <div className="flex-col m-auto">

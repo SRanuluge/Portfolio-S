@@ -10,8 +10,10 @@ const Projects = () => {
             <Card
               key={i}
               alt="image"
-              className="object-fill w-full max-h-[350px] h-[350px]"
+              className="object-contain"
               src={img}
+              // fill
+              // priority
               placeholder="blur"
               title={title}
               details={description}

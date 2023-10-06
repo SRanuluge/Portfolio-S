@@ -1,39 +1,39 @@
-import pro1 from "../../public/pro1.jpg";
-import pro2 from "../../public/pro2.jpg";
+import pro1 from "../../public/pro1.png";
+import pro2 from "../../public/pro2.png";
 import pro3 from "../../public/pro3.jpg";
-import pro4 from "../../public/pro4.jpg";
+import pro4 from "../../public/pro4.png";
 export const projects = [
     {
-      title: "Project 01",
-      description: "Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux",
+      title: "NextJs-13 Car Site",
+      description: "This site has been built using NextJs and Tailwind Css , Headlessui. I used rapid api for details. User can search for a rental car by Brand, model, Fuel type, Manufactured Year. ",
       img: pro1,
-      techStack:["NextJs, Tailwind css"],
-      linkGithub:"#",
-      linkCode:"#"
+      techStack:["ReactJs, NextJs, Tailwind css , Headlessui, Rapid api"],
+      linkGithub:"https://github.com/SRanuluge/next-car-site",
+      linkCode:"https://next-car-site.vercel.app/"
     },
     {
-      title: "Project 02",
-      description: "Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux",
+      title: "E-Commerce Website",
+      description: "This site has been built using ReactJs and Redux , Axios ",
       img: pro2,
-      techStack:["NextJs, Tailwind css"],
-      linkGithub:"#",
-      linkCode:"#"
+      techStack:["ReactJs, Redux, Axios,"],
+      linkGithub:"https://github.com/SRanuluge/demo-react-online-store",
+      linkCode:"https://sranuluge.github.io/demo-react-online-store"
     },
     {
-      title: "Project 03",
-      description: "Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux Javascript, typescript, css, html, redux",
+      title: "Chat Room",
+      description: "Users can sign in using google account. This chat app has been build using ReactJs and Firebase , Axios ",
       img: pro3,
-      techStack:["NextJs, Tailwind css"],
-      linkGithub:"#",
-      linkCode:"#"
+      techStack:["ReactJs, Firebase"],
+      linkGithub:"https://github.com/SRanuluge/react-firebase-chat-app",
+      linkCode:"https://sranuluge.github.io/react-firebase-chat-app/"
     },
     {
-      title: "Project 04",
-      description: "Javascript, typescript, NextJs, css, html, redux",
+      title: "Task App Apis",
+      description: "This is a task management Application (REST apis). Users can register , login and manage there tasks. An email notifications will be sent to the users when upon registration and deletion of their accounts.",
       img: pro4,
-      techStack:["NextJs, Tailwind css"],
-      linkGithub:"#",
-      linkCode:"#"
+      techStack:["Node, MongoDB, jwt, sendgrid/mail"],
+      linkGithub:"https://github.com/SRanuluge/task-manager-api",
+      linkCode:""
     },
   ];
   
@@ -45,10 +45,10 @@ export const projects = [
   ];
   
   export const frontEnd = [
-    'Javascript', 'typescript', 'ReactJs', "NextJs", "React Native", "Redux Toolkit", "REST", "Formik","MUI", "CSS","html","Axios", "GraphQL"
+    'JavaScript', 'TypeScript', 'ReactJs', "NextJs", "React Native", "Redux Toolkit", "REST", "Formik","MUI", "CSS","html","Axios", "GraphQL" ,"TailwindCss"
   ]
   export const backEnd = [
-    'NodeJs', 'Php', 'MySQL', "MongoDB",
+    'PHP','Python','NodeJs', 'MySQL', "MongoDB",
   ]
 
   export const other = [
