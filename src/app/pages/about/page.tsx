@@ -27,7 +27,7 @@ export default function About() {
             <Link
               className="flex font-medium items-center justify-evenly"
               download
-              href="/assets/Sanjeewa.pdf"
+              href="/assets/SanjeewaR.pdf"
               target="_blank"
             >
               <span>
