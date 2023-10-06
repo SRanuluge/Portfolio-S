@@ -26,7 +26,7 @@ export default function Home() {
               </h2>
               <h3 className="text-1xl md:text-2xl">Software Engineer</h3>
               <p className="mx-auto text-base py-2 leading-8 ">
-                {`<>javaScript</>`}
+                {`javaScript | React | PHP | python`}
               </p>
             </div>
             <div className="text-5xl flex justify-evenly py-4 ">
