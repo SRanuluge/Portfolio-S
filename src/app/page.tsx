@@ -3,6 +3,8 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 import SF_image from "../../public/SF-02.png";
 import classes from "@/app/page.module.css";
+import CustomLink from "@/components/button/CustomLink";
+import { linkGithub, linkLinkedIn } from "@/data/Data";
 
 export default function Home() {
   return (
@@ -29,9 +31,17 @@ export default function Home() {
                 {`javaScript | React | PHP | python`}
               </p>
             </div>
-            <div className="text-5xl flex justify-evenly py-4 ">
-              <AiFillLinkedin className="cursor-pointer" />
-              <AiFillGithub className="cursor-pointer" />
+            <div className="flex justify-center gap-4 py-4 ">
+              <CustomLink
+                link={linkLinkedIn}
+                label={""}
+                icon={<AiFillLinkedin className="cursor-pointer text-5xl" />}
+              />
+              <CustomLink
+                link={linkGithub}
+                label={""}
+                icon={<AiFillGithub className="cursor-pointer text-5xl" />}
+              />
             </div>
           </div>
         </div>

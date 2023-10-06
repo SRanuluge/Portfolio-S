@@ -36,6 +36,9 @@ export const projects = [
       linkCode:""
     },
   ];
+
+export const linkGithub = "https://github.com/SRanuluge";
+export const linkLinkedIn = "https://www.linkedin.com/in/sanjeewaranuluge/";
   
   export const navList = [
     { id: "1", name: "Home", link: "/" },
