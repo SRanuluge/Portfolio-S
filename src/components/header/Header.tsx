@@ -49,11 +49,7 @@ const Header = () => {
   return (
     <nav
       className={`${
-        pathName !== "/"
-          ? mood == "dark"
-            ? `bg-[rgb(39,36,36)]`
-            : `bg-[#f3f3f3] shadow-sm`
-          : "bg-none shadow-none"
+        pathName !== "/" ? mood : "bg-none shadow-none"
       }  w-full top-0 fixed z-10  transition-all duration-100 ease-in `}
     >
       <div className="flex py-3 px-2 justify-between max-w-[1366px] m-auto ">
@@ -83,11 +79,7 @@ const Header = () => {
           </li>
           <ul
             className={`${
-              pathName === "/"
-                ? `sm:bg-[#89786E]`
-                : mood == "dark"
-                ? "sm:bg-[rgb(39,36,36)]"
-                : `sm:bg-[#f3f3f3]`
+              pathName === "/" ? `sm:bg-[#89786E]` : mood
             } md:flex overflow-hidden md:items-center md:pb-0 pb-12 md:static sm:fixed w-full sm:w-full sm:h-1/3 md:z-auto sm:-z-50 right-0  md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${
               menu ? "sm:top-[49px]" : "sm:top-[-1500px]"
             }`}
