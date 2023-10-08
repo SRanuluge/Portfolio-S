@@ -1,20 +1,13 @@
-"use client";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { ThemeContext } from "@/contexts/ThemeContext";
 import CustomLink from "@/components/button/CustomLink";
 import { linkGithub, linkLinkedIn } from "@/data/Data";
-import { useContext } from "react";
+import { BgOpacity } from "@/components/BgOpacity";
 
 export default function Home() {
-  const { mood } = useContext(ThemeContext);
   return (
     <>
       <div className="absolute self-center top-0 -z-0 h-screen w-full bg-[url('../../public/bg-001.jpg')] bg-cover bg-center" />
-      <div
-        className={`absolute self-center top-0 -z-0 h-screen w-full bg-[rgb(39,36,36)] ${
-          mood === "dark" ? "bg-opacity-50" : "bg-opacity-0"
-        } bg-cover bg-center`}
-      />
+      <BgOpacity />
       <div className="items-center md:flex sm:flex  w-full min-h-screen z-0 gap-5">
         <div className="md:flex-1 " />
         <div className="flex-1">
