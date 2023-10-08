@@ -1,27 +1,21 @@
-import Image from "next/image";
+"use client";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-
-// import SF_image from "../../public/SF-02.png";
-// import classes from "@/app/page.module.css";
+import { ThemeContext } from "@/contexts/ThemeContext";
 import CustomLink from "@/components/button/CustomLink";
 import { linkGithub, linkLinkedIn } from "@/data/Data";
+import { useContext } from "react";
 
 export default function Home() {
+  const { mood } = useContext(ThemeContext);
   return (
     <>
-      <div className="absolute self-center top-0 -z-0 h-full w-full bg-[url('../../public/bg-001.jpg')] bg-cover bg-center" />
-      {/* <div className="absolute self-center top-0 -z-0 h-full w-full bg-black bg-opacity-30 bg-cover bg-center" /> */}
+      <div className="absolute self-center top-0 -z-0 h-screen w-full bg-[url('../../public/bg-001.jpg')] bg-cover bg-center" />
+      <div
+        className={`absolute self-center top-0 -z-0 h-screen w-full bg-[rgb(39,36,36)] ${
+          mood === "dark" ? "bg-opacity-50" : "bg-opacity-0"
+        } bg-cover bg-center`}
+      />
       <div className="items-center md:flex sm:flex  w-full min-h-screen z-0 gap-5">
-        {/* <div className="relative flex-1 sm:max-w-md "> */}
-        {/* <Image
-          src={SF_image}
-          className={classes.im}
-          style={{ width: "100%", objectFit: "contain" }}
-          height={500}
-          alt="logo" #8B7D72
-          placeholder="blur"
-        /> */}
-        {/* </div> */}
         <div className="md:flex-1 " />
         <div className="flex-1">
           <div className="flex flex-col">

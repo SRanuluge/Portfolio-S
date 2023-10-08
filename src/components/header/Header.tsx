@@ -51,7 +51,7 @@ const Header = () => {
       className={`${
         pathName !== "/"
           ? mood == "dark"
-            ? `bg-[#444]`
+            ? `bg-[rgb(39,36,36)]`
             : `bg-[#f3f3f3] shadow-sm`
           : "bg-none shadow-none"
       }  w-full top-0 fixed z-10  transition-all duration-100 ease-in `}
@@ -86,10 +86,10 @@ const Header = () => {
               pathName === "/"
                 ? `sm:bg-[#89786E]`
                 : mood == "dark"
-                ? "sm:bg-[#444]"
+                ? "sm:bg-[rgb(39,36,36)]"
                 : `sm:bg-[#f3f3f3]`
-            } md:flex overflow-hidden md:items-center md:pb-0 pb-12 md:static sm:fixed w-full sm:w-full sm:h-1/4 md:z-auto sm:-z-50 right-0  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in  ${
-              menu ? "sm:top-[49px]" : "sm:top-[-700px]"
+            } md:flex overflow-hidden md:items-center md:pb-0 pb-12 md:static sm:fixed w-full sm:w-full sm:h-1/3 md:z-auto sm:-z-50 right-0  md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${
+              menu ? "sm:top-[49px]" : "sm:top-[-1500px]"
             }`}
           >
             <NavList navList={navList} handleLink={() => toggleMenu(false)} />

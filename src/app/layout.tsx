@@ -6,6 +6,7 @@ import {
   Cinzel,
   Cormorant,
   Philosopher,
+  Poppins,
 } from "next/font/google";
 
 import "./globals.css";
@@ -15,7 +16,7 @@ import Header from "@/components/header/Header";
 const ThemeProvider = dynamic(() => import("@/contexts/ThemeContext"), {
   ssr: false,
 });
-const inter = Philosopher({ subsets: ["latin"], weight: "400" });
+const inter = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sanjeewa.dev",
