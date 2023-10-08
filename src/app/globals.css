@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,13 +19,13 @@ body {
 }
 
 .dark {
-  background-color:rgb(39, 36, 36) !important;
-  color:rgb(236, 232, 232)
+  background-color:#444 !important;
+  color:#f3f3f3
 }
 
 .light {
-  background-color: white;
-  color:rgb(53, 97, 99);
+  background-color: #f3f3f3;
+  color:#444;
 }
 
 .container {
@@ -36,4 +37,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+a:hover {
+  color: #9e9898;
 }

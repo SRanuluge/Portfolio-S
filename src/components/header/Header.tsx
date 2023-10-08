@@ -24,7 +24,7 @@ const NavList = ({ navList, handleLink }: NaveListProps) => {
     <>
       {navList.map((list) => {
         return (
-          <li className="md:ml-8 md:my-0 my-7 font-semibold" key={list.id}>
+          <li className="md:ml-8 md:my-0 my-7 " key={list.id}>
             <Link
               onClick={handleLink}
               className={`hover:text-green-950-800 duration-500 ${
@@ -44,16 +44,21 @@ const NavList = ({ navList, handleLink }: NaveListProps) => {
 const Header = () => {
   const { toggleMood, mood } = useContext(ThemeContext);
   const [menu, toggleMenu] = useState(false);
+  const pathName = usePathname();
 
   return (
     <nav
       className={`${
-        mood == "dark" ? "bg-neutral-800" : `bg-white`
-      } w-full top-0 fixed z-10  transition-all duration-700 ease-in shadow-sm `}
+        pathName !== "/"
+          ? mood == "dark"
+            ? `bg-[#444]`
+            : `bg-[#f3f3f3] shadow-sm`
+          : "bg-none shadow-none"
+      }  w-full top-0 fixed z-10  transition-all duration-100 ease-in `}
     >
       <div className="flex py-3 px-2 justify-between max-w-[1366px] m-auto ">
         <Link href={"/"}>
-          <h1 className="text-md font-semibold ">Sanjeewa</h1>
+          <h1 className="text-md  ">Sanjeewa</h1>
         </Link>
         <ul className="flex items-center sm:gap-6">
           <li>
@@ -78,9 +83,13 @@ const Header = () => {
           </li>
           <ul
             className={`${
-              mood == "dark" ? "sm:bg-neutral-800" : `sm:bg-white`
-            } md:flex overflow-hidden md:items-center md:pb-0 pb-12 md:static sm:fixed w-full sm:w-1/2 sm:h-full md:z-auto sm:-z-50 right-0  md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in sm:top-[49px] ${
-              menu ? "sm:right-0" : "sm:right-[-700px]"
+              pathName === "/"
+                ? `sm:bg-[#89786E]`
+                : mood == "dark"
+                ? "sm:bg-[#444]"
+                : `sm:bg-[#f3f3f3]`
+            } md:flex overflow-hidden md:items-center md:pb-0 pb-12 md:static sm:fixed w-full sm:w-full sm:h-1/4 md:z-auto sm:-z-50 right-0  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in  ${
+              menu ? "sm:top-[49px]" : "sm:top-[-700px]"
             }`}
           >
             <NavList navList={navList} handleLink={() => toggleMenu(false)} />

@@ -1,5 +1,12 @@
 import dynamic from "next/dynamic";
-import { Raleway, Work_Sans, Roboto_Mono } from "next/font/google";
+import {
+  Raleway,
+  Work_Sans,
+  Roboto_Mono,
+  Cinzel,
+  Cormorant,
+  Philosopher,
+} from "next/font/google";
 
 import "./globals.css";
 
@@ -8,7 +15,7 @@ import Header from "@/components/header/Header";
 const ThemeProvider = dynamic(() => import("@/contexts/ThemeContext"), {
   ssr: false,
 });
-const inter = Work_Sans({ subsets: ["latin"] });
+const inter = Philosopher({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Sanjeewa.dev",
