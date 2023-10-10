@@ -2,11 +2,23 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import CustomLink from "@/components/button/CustomLink";
 import { linkGithub, linkLinkedIn } from "@/data/Data";
 import { BgOpacity } from "@/components/BgOpacity";
+import Image from "next/image";
+import bgImg from "../../public/bg-002.jpg";
 
 export default function Home() {
   return (
     <>
-      <div className="absolute self-center top-0 -z-0 h-screen w-full bg-[url('../../public/bg-001.jpg')] bg-cover bg-center" />
+      <Image
+        src={bgImg}
+        alt="wal"
+        placeholder="blur"
+        priority
+        fill
+        style={{
+          objectFit: "cover",
+        }}
+        className="absolute self-center top-0 -z-0 h-screen w-full  bg-cover bg-center"
+      />
       <BgOpacity />
       <div className="items-center md:flex sm:flex  w-full min-h-screen z-0 gap-5">
         <div className="md:flex-1 " />

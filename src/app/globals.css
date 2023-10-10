@@ -19,13 +19,17 @@ body {
 }
 
 .dark {
-  background-color:rgb(39,36,36) !important;
+  /* /* --tw-bg-opacity: 1; */
+    /* background-color: rgb(17 24 39 / var(--tw-bg-opacity)) !important; */ 
+    background-color: #0D1117 !important;
   color:#f3f3f3
 }
 
 .light {
   background-color: #f3f3f3;
-  color:#444;
+  /* color:#444; */
+  /* color:#757373; */
+  color:#77808d
 }
 
 .container {
