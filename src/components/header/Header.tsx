@@ -91,7 +91,7 @@ const Header = () => {
           } w-full md:flex md:w-auto md:order-1`}
           id="navbar-sticky"
         >
-          <ul className="flex  flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg sm:bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0  sm:dark:bg-[#353131]">
+          <ul className="flex  flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg sm:bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0  sm:dark:bg-gray-900">
             <NavList navList={navList} handleLink={() => toggleMenu(false)} />
           </ul>
         </div>
