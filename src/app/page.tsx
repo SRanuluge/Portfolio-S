@@ -13,11 +13,10 @@ export default function Home() {
         alt="wal"
         placeholder="blur"
         priority
-        // fill
         style={{
           objectFit: "cover",
         }}
-        className="absolute self-center top-0 -z-0 h-screen  sm:min-h-screen w-full bg-center"
+        className="absolute self-center top-0 -z-0 h-screen w-full bg-cover bg-center"
       />
       <BgOpacity />
       <div className="items-center md:flex sm:flex  w-full min-h-screen z-0 gap-5">
