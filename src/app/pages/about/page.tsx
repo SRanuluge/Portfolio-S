@@ -77,7 +77,7 @@ export default function About() {
       <h3 className="font-semibold pt-8 pb-10 text-center md:text-2xl ">
         Experience
       </h3>
-      <div className="py-6 grid grid-cols-2 flex-1 border px-4 shadow-sm  dark:bg-gray-900">
+      <div className="py-6 grid grid-cols-2 flex-1 border px-4 shadow-sm sm:grid-cols-1 dark:bg-gray-900">
         {experience.map((exp, i) => {
           return (
             <div key={i} className="flex-col justify-center text-center py-6 ">
