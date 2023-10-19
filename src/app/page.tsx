@@ -7,7 +7,7 @@ import bgImg from "../../public/bg-002.jpg";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative w-screen h-screen">
       <Image
         src={bgImg}
         alt="wal"
@@ -17,10 +17,10 @@ export default function Home() {
         style={{
           objectFit: "cover",
         }}
-        className="absolute self-center top-0 -z-0 h-full sm:h-screen w-full bg-center"
+        className="absolute self-center top-0 -z-0 h-full w-full bg-center"
       />
       <BgOpacity />
-      <div className="items-center md:flex sm:flex  w-full min-h-screen z-0 gap-5">
+      <div className="absolute items-center md:flex sm:flex  w-full min-h-screen z-10 gap-5">
         <div className="md:flex-1 " />
         <div className="flex-1">
           <div className="flex flex-col">
@@ -50,6 +50,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -26,7 +26,7 @@ export default function About() {
           style={{
             objectFit: "cover",
           }}
-          className="absolute h-full w-full top-0  bg-center"
+          className="absolute h-full w-full top-0 bg-center"
         />
       </section>
       <section className="relative px-4">
@@ -94,11 +94,11 @@ export default function About() {
                   </span>
                 </div>
                 <div className="mb-2 flex items-center justify-center gap-2">
-                  <BriefcaseIcon className="-mt-px h-4 w-4 " />
+                  <BriefcaseIcon className="-mt-px h-4 w-4" />
                   <span className="font-medium ">Software Engineer</span>
                 </div>
                 <div className="mb-2 flex items-baseline gap-2 justify-center">
-                  <AcademicCapIcon className="-mt-px h-4 w-4 " />
+                  <AcademicCapIcon className="-mt-px h-4 w-4  " />
                   <span className="font-medium  ">
                     BS.c Industrial Statistics and Mathematical Finance with
                     Computer Science

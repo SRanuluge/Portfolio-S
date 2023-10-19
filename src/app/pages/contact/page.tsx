@@ -15,7 +15,7 @@ const Contacts = () => {
         />
       </section>
       <div className="mx-auto px-4 ">
-        <section className=" relative max-w-4xl flex-1 py-10 px-4 -mt-[140px] mb-12  h-fit  mx-auto  w-full min-w-0 flex-col break-words rounded-sm bg-gray-50 dark:bg-gray-900 shadow-xl shadow-gray-500/5">
+        <section className=" relative max-w-4xl flex-1 py-10 px-4 -mt-[160px] mb-12  h-fit  mx-auto  w-full min-w-0 flex-col break-words rounded-sm bg-gray-50 dark:bg-gray-900 shadow-xl shadow-gray-500/5">
           <form action="#" className=" space-y-8 ">
             <div>
               <label className="block mb-2 text-sm font-medium">

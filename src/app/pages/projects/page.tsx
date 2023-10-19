@@ -17,7 +17,7 @@ const Projects = () => {
           className="absolute h-full w-full top-0  bg-center"
         />
       </section>
-      <section className="relative px-4 flex-col md:-mt-[180px] sm:-mt-[230px]  md:max-w-5xl  ">
+      <section className="relative px-4 flex-col md:-mt-[180px] sm:-mt-[260px]  md:max-w-5xl  ">
         {projects.map(
           ({ title, description, img, techStack, linkGithub, linkCode }, i) => {
             return (
