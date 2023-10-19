@@ -23,9 +23,9 @@ export const Card: FC<CardProps> = ({
   ...rest
 }) => {
   return (
-    <div className="items-center md:flex md:min-h-full gap-20 my-10  dark:bg-gray-900">
-      <div className="relative flex-1 w-auto h-80 justify-center items-center">
-        <div className="flex w-auto  h-full">
+    <div className="items-center md:flex md:min-h-full gap-20 my-10  dark:bg-gray-900 rounded-2xl bg-gray-50 shadow-xl">
+      <div className=" flex-1 w-auto h-80 justify-center items-center">
+        <div className="flex w-auto relative h-full">
           <Image {...rest} />
         </div>
       </div>
