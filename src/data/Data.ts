@@ -1,7 +1,8 @@
 import pro1 from "../../public/pro1.png";
 import pro2 from "../../public/pro2.png";
 import pro3 from "../../public/pro3.jpg";
-import pro4 from "../../public/pro4.png";
+import pro4 from "../../public/pro4.jpg";
+import pro5 from "../../public/pro5.png";
 export const projects = [
     {
       title: "NextJs-13 Car Site",
@@ -10,6 +11,22 @@ export const projects = [
       techStack:["ReactJs, NextJs, Tailwind css , Headlessui, Rapid api"],
       linkGithub:"https://github.com/SRanuluge/next-car-site",
       linkCode:"https://next-car-site.vercel.app/"
+    },
+    {
+      title: "Task App",
+      description: "This is a task management Application (Front end). Users can register , login and manage there tasks. An email notifications will be sent to the users when upon registration and deletion of their accounts.",
+      img: pro4,
+      techStack:["ReactJs, Material-Tailwind, Axios, redux-toolkit"],
+      linkGithub:"https://github.com/SRanuluge/task-manager-front-end",
+      linkCode:"https://sranuluge.github.io/task-manager-front-end"
+    },
+    {
+      title: "Task App Apis",
+      description: "This is a task management Application (REST apis). Users can register , login and manage there tasks. An email notifications will be sent to the users when upon registration and deletion of their accounts.",
+      img: pro5,
+      techStack:["NodeJs, MongoDB, jwt, Courier/mail"],
+      linkGithub:"https://github.com/SRanuluge/task-manager-api",
+      linkCode:null
     },
     {
       title: "E-Commerce Website",
@@ -27,14 +44,7 @@ export const projects = [
       linkGithub:"https://github.com/SRanuluge/react-firebase-chat-app",
       linkCode:"https://sranuluge.github.io/react-firebase-chat-app/"
     },
-    {
-      title: "Task App Apis",
-      description: "This is a task management Application (REST apis). Users can register , login and manage there tasks. An email notifications will be sent to the users when upon registration and deletion of their accounts.",
-      img: pro4,
-      techStack:["Node, MongoDB, jwt, sendgrid/mail"],
-      linkGithub:"https://github.com/SRanuluge/task-manager-api",
-      linkCode:""
-    },
+    
   ];
 
 export const linkGithub = "https://github.com/SRanuluge";

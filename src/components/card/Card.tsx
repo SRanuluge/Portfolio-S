@@ -10,7 +10,7 @@ type CardProps = {
   btnLabel?: string;
   techStack: string[];
   linkGithub: string;
-  linkCode: string;
+  linkCode: string | null;
 } & ImageProps;
 
 export const Card: FC<CardProps> = ({
@@ -46,11 +46,13 @@ export const Card: FC<CardProps> = ({
               label={"Code"}
               icon={<AiFillGithub className="cursor-pointer" />}
             />
-            <CustomLink
-              link={linkCode}
-              label={"Live Demo"}
-              icon={<FiExternalLink className="cursor-pointer" />}
-            />
+            {linkCode && (
+              <CustomLink
+                link={linkCode}
+                label={"Live Demo"}
+                icon={<FiExternalLink className="cursor-pointer" />}
+              />
+            )}
           </div>
         </div>
       </div>
