@@ -48,15 +48,17 @@ const Header = () => {
   return (
     <nav className={`fixed w-full z-20 top-0 left-0 `}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex md:flex-1">
-          <Image
-            src={logo}
-            className=" rounded-2xl"
-            width={30}
-            height={12}
-            alt="logo"
-          />
-        </Link>
+        <div className="flex md:flex-1">
+          <Link href="/" replace>
+            <Image
+              src={logo}
+              className=" rounded-2xl"
+              width={30}
+              height={12}
+              alt="logo"
+            />
+          </Link>
+        </div>
         <div className="flex gap-4 bg items-center md:order-2 md:flex-1">
           <BsFillMoonStarsFill
             onClick={() => toggleMood()}
