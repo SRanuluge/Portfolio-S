@@ -110,7 +110,7 @@ export default function About() {
                 <div className="mb-2 flex items-center justify-center gap-2">
                   <BuildingLibraryIcon className="-mt-px h-4 w-4 " />
                   <Link
-                    href={"https://science.cmb.ac.lk/"}
+                    href={"https://cmb.ac.lk/"}
                     target="_blank"
                     className="hover:text-cyan-500"
                   >
