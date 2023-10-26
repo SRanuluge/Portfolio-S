@@ -109,9 +109,11 @@ export default function About() {
                 </div>
                 <div className="mb-2 flex items-center justify-center gap-2">
                   <BuildingLibraryIcon className="-mt-px h-4 w-4 " />
-                  <span className="font-medium ">
-                    University of Colombo Sri Lanka
-                  </span>
+                  <Link href={"https://science.cmb.ac.lk/"} target="_blank">
+                    <span className="font-medium ">
+                      University of Colombo Sri Lanka
+                    </span>
+                  </Link>
                 </div>
               </div>
 
