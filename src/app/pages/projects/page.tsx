@@ -6,7 +6,7 @@ import img from "../../../../public/bg-002.jpg";
 const Projects = () => {
   return (
     <>
-      <section className="relative w-screen h-[50vh]">
+      <section className="relative w-screen h-[50vh] ">
         <Image
           src={img}
           alt="me"
@@ -17,14 +17,14 @@ const Projects = () => {
           className="absolute h-full w-full top-0  bg-center"
         />
       </section>
-      <section className="relative px-4 flex-col md:-mt-[180px] sm:-mt-[260px]  md:max-w-5xl  ">
+      <section className="relative px-4 flex-col md:-mt-[180px] sm:-mt-[260px]  md:max-w-5xl transition-all duration-700 ease-in ">
         {projects.map(
           ({ title, description, img, techStack, linkGithub, linkCode }, i) => {
             return (
               <Card
                 key={i}
                 alt="image"
-                className="object-contain"
+                className="object-contain "
                 src={img}
                 fill
                 priority

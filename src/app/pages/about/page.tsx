@@ -5,6 +5,7 @@ import {
   BriefcaseIcon,
   BuildingLibraryIcon,
   AcademicCapIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/solid";
 import profile from "../../../../public/profile.jpg";
 import img from "../../../../public/bg-002.jpg";
@@ -46,7 +47,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="mt-10 flex w-full justify-center px-4 lg:order-3 lg:mt-0 lg:w-4/12 lg:justify-end lg:self-center">
-                  <div className="py-2 w-[120px] border mt-2 hover:bg-[#c9c4c4]">
+                  <div className="py-2 w-[120px] border mt-2 ">
                     <Link
                       className="flex font-medium items-center justify-evenly"
                       download
@@ -97,9 +98,11 @@ export default function About() {
                   <BriefcaseIcon className="-mt-px h-4 w-4" />
                   <span className="font-medium ">Software Engineer</span>
                 </div>
-                <div className="mb-2 flex items-baseline gap-2 justify-center">
-                  <AcademicCapIcon className="-mt-px h-4 w-4  " />
-                  <span className="font-medium  ">
+                <div className="mb-2 flex items-baseline  justify-center gap-2">
+                  <div className="-mt-px h-4 w-4 mx-2">
+                    <AcademicCapIcon className="w-full h-full sm:mx-2" />
+                  </div>
+                  <span className="font-medium">
                     BS.c Industrial Statistics and Mathematical Finance with
                     Computer Science
                   </span>
@@ -116,8 +119,15 @@ export default function About() {
                 <div className="mt-2 flex flex-wrap justify-center">
                   <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
                     <span className="mb-8 font-normal">{aboutMe}</span>
-                    <button onClick={() => setShowMore(!showMore)}>
-                      Show more
+                    <button
+                      className="animate-bounce font-medium flex items-center border gap-2 py-2 px-2 w-auto"
+                      onClick={() => setShowMore(!showMore)}
+                    >
+                      <span>
+                        {" "}
+                        <ChevronDownIcon className="-mt-px h-4 w-4" />
+                      </span>
+                      Show More
                     </button>
                   </div>
                 </div>
