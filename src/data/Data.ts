@@ -30,7 +30,7 @@ export const projects = [
       linkCode:null
     },
     {
-      title: "Weather Application",
+      title: "Weather Application testing",
       description: "This is a user-friendly weather application crafted with React.js. Users can effortlessly access weather information by simply entering a city name, ensuring quick and intuitive access to current weather data.",
       img: pro6,
       techStack:["Reactjs, MaterialUi, Axios, Openweathermap API"],
