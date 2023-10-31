@@ -3,6 +3,7 @@ import pro2 from "../../public/pro2.png";
 import pro3 from "../../public/pro3.jpg";
 import pro4 from "../../public/pro4.jpg";
 import pro5 from "../../public/pro5.png";
+import pro6 from "../../public/pro6.png";
 export const projects = [
     {
       title: "NextJs-13 Car Site",
@@ -27,6 +28,14 @@ export const projects = [
       techStack:["NodeJs, MongoDB, jwt, Courier/mail"],
       linkGithub:"https://github.com/SRanuluge/task-manager-api",
       linkCode:null
+    },
+    {
+      title: "Weather Application",
+      description: "This is a user-friendly weather application crafted with React.js. Users can effortlessly access weather information by simply entering a city name, ensuring quick and intuitive access to current weather data.",
+      img: pro6,
+      techStack:["Reactjs, MaterialUi, axios, openweathermap api"],
+      linkGithub:"https://sranuluge.github.io/react-weather-app/",
+      linkCode:"https://github.com/SRanuluge/react-weather-app"
     },
     {
       title: "E-Commerce Website",
