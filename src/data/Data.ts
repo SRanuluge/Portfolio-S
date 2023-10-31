@@ -33,9 +33,9 @@ export const projects = [
       title: "Weather Application",
       description: "This is a user-friendly weather application crafted with React.js. Users can effortlessly access weather information by simply entering a city name, ensuring quick and intuitive access to current weather data.",
       img: pro6,
-      techStack:["Reactjs, MaterialUi, axios, openweathermap api"],
-      linkGithub:"https://sranuluge.github.io/react-weather-app/",
-      linkCode:"https://github.com/SRanuluge/react-weather-app"
+      techStack:["Reactjs, MaterialUi, Axios, Openweathermap API"],
+      linkGithub:"https://github.com/SRanuluge/react-weather-app",
+      linkCode:"https://sranuluge.github.io/react-weather-app/"
     },
     {
       title: "E-Commerce Website",
